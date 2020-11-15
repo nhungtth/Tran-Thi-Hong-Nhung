@@ -5,8 +5,10 @@ var server = require('http').createServer(app);
 
 var io = require('socket.io')(server);
 
+var cors = require('cors');
+app.use(cors({origin: 'http://localhost:8000'}));
+
 app.get('/', function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.sendFile(__dirname + "/public/index.html");
 });
 
