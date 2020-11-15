@@ -6,7 +6,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
 var cors = require('cors');
-app.use(cors({origin: 'http://localhost:8000'}));
+app.use(cors());
 
 app.get('/', function (req, res, next) {
   res.sendFile(__dirname + "/public/index.html");
