@@ -26,8 +26,9 @@ div{
   
 }
 
-i,b{
-  color: #1b56f7d8
+i,h2,b{
+  color: #4265c7;
+  font: bold;
 }
 
 label, header{
