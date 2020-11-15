@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title> Real Time Chat </title>
+    <meta name="viewport" http-equiv="refresh" content="number" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <form>
+        <div id="home">
+            <h2>My Realtime Chat </h2>
+            <img src="source.gif" alt="gif" style="width:150px; height:120px">
+            <br>
+            <label>Username</label>
+            <input id="username" type="text" placeholder="username" />
+        </div>
+        <br>
+        <br>
+
+        <div id="chatArea"></div>
+        <br>
+
+        <div id="mesArea">
+            <i class="glyphicon glyphicon-pencil" style="font-size:20px;"></i>
+            <input id="message" type="text" placeholder="message">
+            <input id="submit" type="submit" value="Send">
+        </div>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+html, body {
+  text-align: center;
+  font-family: 'Avenir Next', 'Helvetica', 'Arial', sans-serif; 
+  min-width: fit-content;
+}
+
+form{
+  outline-style:  solid;
+  top: 0;
+  background-color: #fcf8f8;
+  margin: 5px;
+  padding:5px;
+  min-height: fit-content;
+}
+
+div{
+  background-color:rgb(252, 248, 248);
+}
+
+#chatArea{
+  background-color: #f0fcb9;
+  border: 2px solid  #4265c7;
+  border-radius: 6px;
+  text-align: left;
+  padding: 20px;
+  
+}
+
+i,b{
+  color: #1b56f7d8
+}
+
+label, header{
+  font: bold 20px 'Arial';
+  color:#4265c7;
+}
+
+input{
+  width:80%;
+  border: 2px solid  #4265c7;
+  border-radius: 8px;
+  font: bold 16px 'Arial';
+}
+
+#submit{
+  width: 100px;
+  background-color:#1b55f7;
+  color: white;
+}
+
+#home{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0
+}
+
+#mesArea{
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0
+}
+
