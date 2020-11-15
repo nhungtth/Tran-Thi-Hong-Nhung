@@ -5,8 +5,8 @@ var server = require('http').createServer(app);
 
 var io = require('socket.io')(server);
 
-app.get('/', function (req, res, ext) {
-  res.writeHead(200, {'Content-type': 'text/plain;charset=UTF8', 'Access-Control-Allow-Origin': '*'})
+app.get('/', function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.sendFile(__dirname + "/public/index.html");
 });
 
