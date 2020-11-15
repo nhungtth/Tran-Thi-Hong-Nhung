@@ -21,4 +21,4 @@ io.on('connection', function (client) {
     client.broadcast.emit('chat', data);
   });
 });
-server.listen(8000);
+server.listen(process.env.PORT || 8000)
