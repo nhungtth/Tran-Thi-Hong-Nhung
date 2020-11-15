@@ -9,6 +9,10 @@ app.get('/', function (req, res, ext) {
   res.sendFile(__dirname + "/public/index.html");
 });
 
+app.post('/', function (req, res, ext) {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
 app.use(express.static('public'));
 
 io.on('connection', function (client) {
