@@ -1,6 +1,6 @@
 var socket = io();
 socket.on('connect', function (data) {
-  socket.emit('join', 'A clien is joining chatroom');
+  socket.emit('join', 'A clien joined chatroom');
 });
 
 socket.on('chat', function (data) {
